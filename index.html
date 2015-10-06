@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v111">
+    <title>Voting Test</title>
+</head>
+<body>
+<div id="header">
+    <h2>Choose the color you like better:</h2>
+    <h4>(or be indecisive)</h4>
+</div>
+<div id="choices">
+    <button id="left" onclick="selectLeft()">•</button>
+    <button id="neither" onclick="selectNone()">=</button>
+    <button id="right" onclick="selectRight()">•</button>
+</div>
+<div id="debug">
+    <p>left: <span id="leftCount">0</span> | right: <span id="rightCount">0</span></p>
+
+    <h3>Colors</h3>
+    <ul>
+        <li>red: <span id="redScore">0</span></li>
+        <li>orange: <span id="orangeScore">0</span></li>
+        <li>yellow: <span id="yellowScore">0</span></li>
+        <li>green: <span id="greenScore">0</span></li>
+        <li>blue: <span id="blueScore">0</span></li>
+    </ul>
+</div>
+<div id="orderedChoices"></div>
+<div>
+    <p id="countIndicator"><span id="numberLeft">0</span> more decisions</p>
+</div>
+<script src="libs/jquery.js"></script>
+<script src="libs/two.js"></script>
+<script src="libs/tween.js"></script>
+<script type="text/javascript" src="js/main.js?v002"></script>
+</body>
+</html>
